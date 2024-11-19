@@ -29,7 +29,7 @@ def register_callbacks(app, mesh_path, texture_path):
         use_black_intervals = 'on' in toggle_black_intervals
         center_on_zero = 'on' in center_colormap
 
-        fig = fct.plot_mesh_with_colorbar(
+        fig = fct.plot(
             vertices, faces, scalars, color_min=min_value, color_max=max_value,
             camera=camera, show_contours=show_contours, colormap=selected_colormap,
             use_black_intervals=use_black_intervals, center_colormap_on_zero=center_on_zero
